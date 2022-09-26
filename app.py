@@ -4,7 +4,7 @@ from flask_cors import CORS
 from bson.json_util import dumps
 
 app = Flask(__name__, static_folder='./public')  # html.index 가 있는 폴더 연결
-CORS(app)  # 리액트(3000)랑 파이썬(5000) 주소 오류제거
+# CORS(app)  # 리액트(3000)랑 파이썬(5000) 주소 오류제거
 
 
 client = MongoClient(
